@@ -1,0 +1,88 @@
+.messageArea {
+    height: 100%;
+    overflow: auto;
+}
+
+.messageFrom {
+    display: grid;
+    grid-template-areas:
+        "photo msgSender"
+        "photo message";
+    grid-template-columns: 100px auto;
+    position: relative;
+    margin: 20px 0px;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.messageFrom>.msgContent {
+    background-color: rgb(94, 74, 227);
+    color: white;
+    padding: 20px 16px;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    box-shadow: 0 0 30px lightgray;
+    width: fit-content;
+}
+
+.messageTo {
+    display: grid;
+    grid-template-areas:
+        "msgSender photo"
+        "message photo";
+    grid-template-columns: auto 100px;
+    position: relative;
+    margin: 20px 0px;
+    width: 75%;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.messageTo>.msgContent {
+    background-color: white;
+    padding: 20px 16px;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 30px lightgray;
+    border: 1px solid lightgray;
+    width: fit-content;
+}
+
+.messageTo > .msgSender {
+    text-align: right;
+}
+
+/* Global */
+.userPhoto {
+    grid-area: photo;
+    vertical-align: middle;
+    background-color: orange;
+    background-size: cover;
+    border-radius: 100%;
+    margin: 0px 20px;
+    height: 50px;
+    width: 50px;
+    transition: 0.1s;
+}
+
+.msgSender {
+    grid-area: msgSender;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.msgContent {
+    grid-area: message;
+    margin: 10px 0px;
+}
+
+.msgImage {
+    /* grid-area: message; */
+}
+
+.msgTime {
+    color: lightgray;
+    margin: 0px 20px;
+}

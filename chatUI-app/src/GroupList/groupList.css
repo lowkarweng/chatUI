@@ -1,0 +1,119 @@
+.groupList {
+    background-color: white;
+    position: relative;
+    margin: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    height: calc(100% - 40px);
+    width: calc(100% - 30px);
+}
+
+.addGroup {
+    position: relative;
+    height: 31px;
+    width: calc(100% - 50px);
+    margin: 20px 25px 10px 25px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.addGroup>button[type="button"] {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    font-size: 26px;
+    background-color: transparent;
+    border: 0;
+    vertical-align: top;
+    right: 0px;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.addGroup>button[type="button"]:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.addGroup>button[type="button"]:active {
+    background-color: rgb(206, 206, 206);
+}
+
+.groupCompList {
+    position: relative;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    height: calc(100% - 51px - 28px);
+    overflow-y: auto;
+}
+
+.groupComp {
+    padding: 6px 14px 6px 14px;
+    height: 30px;
+    transition: 0.1s;
+    user-select: none;
+    display: grid;
+    grid-template-columns: 30px auto 45px;
+}
+
+.groupComp:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.groupComp:active {
+    background-color: rgb(226, 226, 226);
+}
+
+.groupTag {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: brown;
+    height: 100%;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 6px;
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.groupName {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+}
+
+.groupMember {
+    text-align: right;
+}
+
+.groupMemberPhoto {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: brown;
+    background-size: cover;
+}
+
+.groupMemberPhoto:has(div) {
+    right: 15px;
+}
+
+.groupMemberMore {
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    left: 15px;
+    background-color: rgb(221, 219, 219);
+    align-content: center;
+    text-align: center;
+}

@@ -3,8 +3,8 @@
     position: relative;
     margin: 15px;
     border-radius: 10px;
-    height: 530px;
-    width: 350px;
+    /* height: calc(100% - 30px);
+    width: calc(100% - 30px); */
 }
 
 .magnifier {
@@ -19,12 +19,13 @@
 
 .chatUserList {
     height: 356px;
+    overflow: auto;
 }
 
 .searchBox {
     position: relative;
     height: 52px;
-    width: 300px;
+    width: calc(100% - 50px);
     margin: 18px 25px 10px 25px;
 }
 
@@ -32,7 +33,7 @@
     height: 100%;
     width: calc(100% - 45px);
     background-color: rgb(242, 242, 242);
-    border-radius: 10px;
+    border-radius: 6px;
     outline: 0;
     border: 0;
     padding: 0 0 0 45px;
@@ -43,7 +44,7 @@
 .chatUserComp {
     position: relative;
     display: grid;
-    width: 300px;
+    width: calc(100% - 50px);
     padding: 10px 25px 10px 25px;
     grid-template-columns: 45px auto 25px;
     grid-template-areas:
@@ -151,11 +152,12 @@
 .cLButton {
     position: relative;
     margin: 8px 14px 14px 14px;
+    width: calc(100% - 28px);
 }
 
 .cLButton > button[type="button"] {
     border: 0;
-    width: 148px;
+    width: calc(50% - 12px); /* two button, each button 50% space */
     height: 60px;
     border-radius: 10px;
     font-size: 18px;

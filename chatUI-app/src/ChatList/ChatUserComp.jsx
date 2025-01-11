@@ -1,7 +1,17 @@
+import { useState, useEffect } from 'react';
+import { getGroupList, getUser } from '../FetchAPI/FetchAPI.js';
+import { useChatContext } from '../FetchAPI/ChatState.jsx';
+
 const ChatUserComp = ({ cUC_id, cUC_photo, cUC_status, cUC_name, cUC_quantity, cUC_message, cUC_date, cUC_time, cUC_read }) => {
-    cUC_date
+
+    const { cTarget, setCTarget } = useChatContext();
+
+    const setTarget = () => {
+        setCTarget(cUC_id);
+    };
+
     return (
-        <div id={"userChat_" + cUC_id} className="chatUserComp">
+        <div id={"userChat_" + cUC_id} className="chatUserComp" onClick={setTarget}>
             <div className="cUC_photo" style={{ backgroundImage: `url(${cUC_photo})` }}>
                 <div className="cUC_status"></div>
             </div>

@@ -1,16 +1,22 @@
 .sider {
     background-color: rgb(94, 74, 227);
-    border-top-right-radius: 46px;
-    border-bottom-right-radius: 46px;
+    /* border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px; */
+    border-top-right-radius: max(calc(2.396vw), 8px);
+    border-bottom-right-radius: max(calc(2.396vw), 8px);
     position: absolute;
     display: block;
+    left: 5px;
+    top: 10px;
 }
 
 .siderComp {
     position: relative;
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: max(calc(1.875vw), 26px);
     text-align: center;
-    padding: 22px;
+    /* padding: 22px; */
+    padding: max(calc(1.146vw), 14px);
     border-radius: 100%;
     transition: 0.1s;
 }

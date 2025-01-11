@@ -38,7 +38,7 @@ export default function ChatList() {
   });
   
   return (
-    <div className="chatListGrid chatList" style={{ opacity: 1 }}>
+    <div className="chatListGrid chatList">
       <div style={{ position: "relative" }}>
         <div className="searchBox">
           <input type="text" placeholder='Search Contact' onChange={handleSearchChange}></input>

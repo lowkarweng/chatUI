@@ -1,37 +1,53 @@
-.grid-container{
+.grid-container {
+    position: relative;
     display: grid;
     height: 100vh;
-    grid-template-columns: minmax(100px, 6%) auto;
-    grid-template-rows: 6% 5% 5% 84%;
-    grid-template-areas: 
+    width: 100vw;
+    grid-template-columns: minmax(60px, 6%) minmax(300px, 20%) minmax(535px, 53%) minmax(300px, 21%);
+    grid-template-rows: 6% 59% 35%;
+    grid-template-areas:
         "sider title title title"
-        "sider chatList chatMessage chatUser"
-        "sider group chatMessage chatUser";
+        "sider chatList chatroom chatInfo"
+        "sider groupList chatroom chatInfo";
 }
 
-.siderGrid{
+.siderGrid {
     grid-area: sider;
-    left: 5px;
-    top: 10px;
-
 }
 
-.titleGrid{
+.titleGrid {
     grid-area: title;
 }
 
-.chatListGrid{
+.chatListGrid {
     grid-area: chatList;
 }
 
-.chatMessageGrid{
-    grid-area: chatMessage;
+.chatroomGrid {
+    grid-area: chatroom;
 }
 
-.chatUserGrid{
-    grid-area: chatUser;
+.chatInfoGrid {
+    grid-area: chatInfo;
 }
 
-.groupGrid{
-    grid-area: group;
+.groupListGrid {
+    grid-area: groupList;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(209, 208, 211);
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #929292;
 }
