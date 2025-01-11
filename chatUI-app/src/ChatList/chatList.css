@@ -1,0 +1,179 @@
+.chatList {
+    background-color: white;
+    position: relative;
+    margin: 15px;
+    border-radius: 10px;
+    height: 530px;
+    width: 350px;
+}
+
+.magnifier {
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 15px;
+    color: grey;
+}
+
+.chatUserList {
+    height: 356px;
+}
+
+.searchBox {
+    position: relative;
+    height: 52px;
+    width: 300px;
+    margin: 18px 25px 10px 25px;
+}
+
+.searchBox>input[type="text"] {
+    height: 100%;
+    width: calc(100% - 45px);
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    padding: 0 0 0 45px;
+    position: absolute;
+    font-size: 20px;
+}
+
+.chatUserComp {
+    position: relative;
+    display: grid;
+    width: 300px;
+    padding: 10px 25px 10px 25px;
+    grid-template-columns: 45px auto 25px;
+    grid-template-areas:
+        "photo name quantity"
+        "photo message ."
+        ". date read";
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    transition: 0.1s;
+}
+
+.chatUserComp:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.chatUserComp:active {
+    background-color: rgb(226, 226, 226);
+}
+
+.cUC_photo {
+    grid-area: photo;
+    position: relative;
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+    background-color: chocolate;
+    background-size: cover;
+}
+
+.cUC_status {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(5, 150, 22);
+}
+
+.cUC_offline {
+    background-color: rgb(215, 215, 219);
+}
+
+.cUC_name {
+    grid-area: name;
+    margin-top: 2px;
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.cUC_quantity {
+    grid-area: quantity;
+    background-color: rgb(255, 1, 80);
+    color: white;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+.cUC_message {
+    grid-area: message;
+    margin-top: 4px;
+    margin-left: 12px;
+    color: gray;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 218px;
+}
+
+.cUC_date {
+    grid-area: date;
+    margin-top: 8px;
+    margin-left: 12px;
+    font-size: 12px;
+}
+
+.cUC_date > span:first-child {
+    margin-right: 10px;
+}
+
+.cUC_read {
+    grid-area: read;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    height: 20px;
+    width: 20px;
+    color: rgb(94, 74, 227);
+}
+
+.cUC_unread {
+    color: gray;
+}
+
+.cLButton {
+    position: relative;
+    margin: 8px 14px 14px 14px;
+}
+
+.cLButton > button[type="button"] {
+    border: 0;
+    width: 148px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 6px;
+    background-color: rgb(242, 242, 242);
+    transition: 0.1s;
+}
+
+.cLButton > button[type="button"]:first-child {
+    background-color: rgb(94, 74, 227);
+    color: white;
+}
+
+.cLButton > button[type="button"]:hover {
+    filter: brightness(0.9);
+}
+
+.cLButton > button[type="button"]:active {
+    filter: brightness(0.8);
+}

@@ -1,0 +1,37 @@
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(100px, 6%) auto;
+    grid-template-rows: 6% 5% 5% 84%;
+    grid-template-areas: 
+        "sider title title title"
+        "sider chatList chatMessage chatUser"
+        "sider group chatMessage chatUser";
+}
+
+.siderGrid{
+    grid-area: sider;
+    left: 5px;
+    top: 10px;
+
+}
+
+.titleGrid{
+    grid-area: title;
+}
+
+.chatListGrid{
+    grid-area: chatList;
+}
+
+.chatMessageGrid{
+    grid-area: chatMessage;
+}
+
+.chatUserGrid{
+    grid-area: chatUser;
+}
+
+.groupGrid{
+    grid-area: group;
+}
