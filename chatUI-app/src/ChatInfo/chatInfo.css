@@ -4,6 +4,147 @@
     margin: 15px;
     margin-bottom: 25px;
     border-radius: 10px;
-    height: calc(100% - 40px);
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: calc(100% - 40px);
+    height: fit-content;
     width: calc(100% - 30px);
+    border-radius: 16px;
+    position: relative;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 30px lightgray;
+}
+
+.infoProfile {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    height: 400px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    transition: 0.1s;
+}
+
+.infoProfile::before {
+    content: '';
+    position: absolute;
+    top: 68%; /* Block the bottom 40% */
+    left: 0;
+    width: 100%;
+    height: 40%; /* Adjust to control the cropped area */
+    background-color: white; /* This "hides" the image */
+}
+
+.infoDetail {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 54%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 76%;
+    min-width: calc(270px - 12px);
+    border-radius: 16px;
+    background-color: white;
+    padding: 6px;
+}
+
+.infoDetail>div {
+    padding-top: 12px;
+}
+
+.infoDetail>div:nth-child(2) {
+    color: gray;
+}
+
+.infoButton {
+    align-content: center;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.infoButton>i {
+    border-radius: 100%;
+    margin: 0px 6px;
+    border: 1px solid rgb(71, 71, 71);
+    color: rgb(71, 71, 71);
+    height: 42px;
+    width: 42px;
+    align-content: center;
+    transition: 0.1s;
+}
+
+.infoButton>i:first-child {
+    background-color: white;
+}
+
+.infoButton>i:nth-child(2) {
+    background-color: rgb(94, 74, 227);
+    color: white;
+}
+
+.infoButton>i:last-child {
+    background-color: rgb(255, 1, 80);
+    color: white;
+}
+
+.infoButton>i:hover {
+    filter: brightness(0.8);
+}
+
+.infoButton>i:active {
+    filter: brightness(0.6);
+}
+
+.infoUser {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+.infoIcon {
+    display: block;
+    float: right;
+    font-size: 22px;
+}
+
+.infoText {
+    margin-top: 10px;
+    width: 100%;
+    word-break: break-all;
+}
+
+.infoLabel {
+    margin-top: 16px;
+    color: gray;
+}
+
+.infoGroup {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0px;
+}
+
+.infoGroupTitle {
+    position: relative;
+    padding: 0px 20px 10px 20px;
+    width: calc(100% - 40px);
+}
+
+.infoMedia {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+.infoMediaImage {
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    margin: 6px 10px 0px 0px;
+    background-color: brown;
 }

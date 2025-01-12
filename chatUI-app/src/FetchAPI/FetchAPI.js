@@ -39,3 +39,24 @@ export async function getChatByUser(id) {
         console.error(error.message);
     }
 };
+
+//API => Add New Chat (POST)
+export async function sendMessage(from, to, message) {
+    const url = "http://18.143.79.95/api/chatSystem/chat/add";
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify({ from, to, message }),
+            headers: {
+                "Content-Type": "application/json",  // Specify that the body contains JSON
+            },
+            mode: "no-cors"
+        });
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error(error.message);
+    }
+};

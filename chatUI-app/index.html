@@ -1,16 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chatUI</title>
-    <script src="https://kit.fontawesome.com/e132d1d913.js" crossorigin="anonymous"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden; background-color: rgb(234, 237, 242);">
-    <div id="root">
-      Chat
-    </div>
-    <img src="chatUI.png" style="height: 100vh; display: block; position: absolute; top: 0; left: 0; z-index: -1; opacity: 1;">
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>chatUI</title>
+  <style>
+    /* Apply scaling based on viewport height or width */
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background-color: rgb(234, 237, 242);
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/e132d1d913.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    // Get the viewport dimensions
+    const defaultWH = [window.innerWidth, window.innerHeight];
+
+    function scalePage() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      // If the width is smaller than the height (portrait mode)
+      if (document.getElementById("root").firstElementChild) {
+        if (width < 1240) {
+          // Scale the page to a smaller size when the width is less than the height
+          document.body.style.transform = `scale(${0.8 * width / 1000})`; // Adjust the scale factor as needed
+          document.body.style.transformOrigin = "top left"; // Scale from the top-left corner
+          document.getElementById("root").firstElementChild.style.height = (1111111 / width) + "px";
+        } else {
+          // Reset the scale for wider viewports (landscape mode)
+          document.body.style.removeProperty("transform");
+          document.getElementById("root").firstElementChild.style.removeProperty("height");
+          document.body.style.removeProperty("transform-origin");
+        }
+      };
+    }
+
+    // Create a MutationObserver to listen for changes in the DOM
+    const observer = new MutationObserver((mutationsList, observer) => {
+      // Loop through all mutations that just occurred
+      for (const mutation of mutationsList) {
+        // Check if the added node is the element you're looking for
+        if (mutation.type === 'childList') {
+          const element = document.getElementById("root").firstElementChild;
+
+          if (element) {  // Check if the element appears in the DOM
+            // Trigger page sizing
+            scalePage();
+
+            // Stop observing after the element is found and event listener is added
+            observer.disconnect();
+          }
+        }
+      }
+    });
+
+    // Start observing changes in the body or any specific parent element
+    observer.observe(document.body, {
+      childList: true,  // Watch for added/removed child elements
+      subtree: true     // Watch all descendant elements
+    });
+
+    // Run the scalePage function when the page loads or when the window is resized
+    window.addEventListener("resize", scalePage);
+    window.addEventListener("load", scalePage);
+  </script>
+</body>
+
 </html>

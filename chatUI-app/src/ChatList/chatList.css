@@ -1,10 +1,10 @@
 .chatList {
+    display: grid;
+    grid-template-rows: 80px auto 90px;
     background-color: white;
     position: relative;
     margin: 15px;
     border-radius: 10px;
-    /* height: calc(100% - 30px);
-    width: calc(100% - 30px); */
 }
 
 .magnifier {
@@ -18,7 +18,7 @@
 }
 
 .chatUserList {
-    height: 356px;
+    height: 100%;
     overflow: auto;
 }
 
@@ -129,7 +129,7 @@
     font-size: 12px;
 }
 
-.cUC_date > span:first-child {
+.cUC_date>span:first-child {
     margin-right: 10px;
 }
 
@@ -155,9 +155,10 @@
     width: calc(100% - 28px);
 }
 
-.cLButton > button[type="button"] {
+.cLButton>button[type="button"] {
     border: 0;
-    width: calc(50% - 12px); /* two button, each button 50% space */
+    width: calc(50% - 12px);
+    /* two button, each button 50% space */
     height: 60px;
     border-radius: 10px;
     font-size: 18px;
@@ -167,15 +168,15 @@
     transition: 0.1s;
 }
 
-.cLButton > button[type="button"]:first-child {
+.cLButton>button[type="button"]:first-child {
     background-color: rgb(94, 74, 227);
     color: white;
 }
 
-.cLButton > button[type="button"]:hover {
+.cLButton>button[type="button"]:hover {
     filter: brightness(0.9);
 }
 
-.cLButton > button[type="button"]:active {
+.cLButton>button[type="button"]:active {
     filter: brightness(0.8);
 }

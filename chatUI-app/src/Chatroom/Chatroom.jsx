@@ -1,13 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 //Import chat context to access global variable (Chat user ID)
 import { useChatContext } from '../FetchAPI/ChatState.jsx';
-import { getUser, getChatByUser } from '../FetchAPI/FetchAPI.js';
+import { getUser, getChatByUser, sendMessage } from '../FetchAPI/FetchAPI.js';
 import './chatroom.css';
 import './message.css';
 
 import MessageFrom from "./MessageFrom.jsx";
 import MessageTo from "./MessageTo.jsx";
 
+//Current login user - me
 const myInfo = await getUser(5);
 
 const Chatroom = ({ }) => {
@@ -55,15 +56,24 @@ const Chatroom = ({ }) => {
         filteredChats.forEach(message => {
             if (message.fromUser == 5) {
                 messageControl.push(
-                    <MessageFrom key={message.id} message={message.message} image={message.img} time={message.timestamp} photo={myInfo.profileImage} target={myInfo.username} />
+                    <MessageFrom key={message.id} message={message.message} image={message.image} time={message.timestamp} photo={myInfo.profileImage} target={myInfo.username} />
                 );
             };
             if (message.toUser == 5) {
                 messageControl.push(
-                    <MessageTo key={message.id} message={message.message} image={message.img} time={message.timestamp} photo={targetInfo.profileImage} target={targetInfo.username} />
+                    <MessageTo key={message.id} message={message.message} image={message.image} time={message.timestamp} photo={targetInfo.profileImage} target={targetInfo.username} />
                 );
             };
         });
+    };
+
+    //Send message function
+    function sendMsg() {
+        const message = document.getElementById("messageInput").value;
+        if (message != "") {
+            sendMessage(5, cTarget, message);
+            document.getElementById("messageInput").value = "";
+        };
     };
 
     return (
@@ -88,7 +98,7 @@ const Chatroom = ({ }) => {
                 {messageControl}
             </div>
             <div className="inputArea">
-                <textarea placeholder='Type a message here..'></textarea >
+                <textarea id="messageInput" placeholder='Type a message here..' maxLength={160}></textarea >
                 <div className="buttonArea">
                     <div className='inputButton'>
                         <i className="fa-solid fa-at"></i>
@@ -108,7 +118,7 @@ const Chatroom = ({ }) => {
                     <div className='inputButton'>
                         <i className="fa-solid fa-link"></i>
                     </div>
-                    <div className="enterButton">
+                    <div className="enterButton" onClick={sendMsg}>
                         <i className="fa-solid fa-paper-plane"></i>
                     </div>
                 </div>

@@ -36,9 +36,11 @@
     width: 75%;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
 }
 
 .messageTo>.msgContent {
+    position: relative;
     background-color: white;
     padding: 20px 16px;
     border-radius: 8px;
@@ -46,6 +48,7 @@
     box-shadow: 0 0 30px lightgray;
     border: 1px solid lightgray;
     width: fit-content;
+    margin-left: auto;
 }
 
 .messageTo > .msgSender {
@@ -79,7 +82,10 @@
 }
 
 .msgImage {
-    /* grid-area: message; */
+    width: auto;
+    height: 100px;
+    border-radius: 6px;
+    margin-bottom: 6px;
 }
 
 .msgTime {

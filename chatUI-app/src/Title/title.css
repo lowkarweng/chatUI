@@ -1,8 +1,23 @@
 .title {
+    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 28px;
     margin-top: 16px;
     margin-left: 16px;
     margin-bottom: auto;
+}
+
+.addProfile {
+    position: absolute;
+    right: 0;
+    margin-top: 22px;
+    margin-right: 20px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(99, 80, 228);
+    cursor: pointer;
+    user-select: none;
 }

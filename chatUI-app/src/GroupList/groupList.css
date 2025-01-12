@@ -54,6 +54,8 @@
     user-select: none;
     display: grid;
     grid-template-columns: 30px auto 45px;
+    grid-template-rows: 30px;
+    width: calc(100% - 28px);
 }
 
 .groupComp:hover {
@@ -83,6 +85,7 @@
     font-size: 20px;
     height: 100%;
     text-overflow: ellipsis;
+    align-content: center;
     overflow: hidden;
     white-space: nowrap;
     width: auto;

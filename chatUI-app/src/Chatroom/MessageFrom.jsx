@@ -1,6 +1,17 @@
 const MessageFrom = ({ message, image, time, photo, target }) => {
     const pDate = formatDate(time);
     const pTime = formatTime(time);
+
+    if (image) {
+        image = (
+            <div>
+                <img className="msgImage" src={image} alt={image} />
+            </div>
+        );
+    } else {
+        image = "";
+    };
+
     return (
         <div className="messageFrom">
             <div className="userPhoto" style={{ backgroundImage: `url(${photo})` }}></div>
@@ -8,8 +19,10 @@ const MessageFrom = ({ message, image, time, photo, target }) => {
                 <span className="userName">{target}</span>
                 <span className="msgTime">{pDate + " " + pTime}</span>
             </div>
-            <div className="msgContent">{message}</div>
-            <div className="msgImage">{image}</div>
+            <div className="msgContent">
+                {image}
+                {message}
+            </div>
         </div>
     );
 };
