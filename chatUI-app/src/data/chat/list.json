@@ -1,0 +1,471 @@
+[
+    {
+        "id": 1,
+        "fromUser": 4,
+        "toUser": 5,
+        "message": "Lorem Ipsum 1 (From Michael) is simply dummy text of the printing and typesetting industry.",
+        "image": null,
+        "timestamp": 1707719080
+    },
+    {
+        "id": 2,
+        "fromUser": 1,
+        "toUser": 5,
+        "message": "Lorem Ipsum 2 (To Jonathan) is simply dummy text of the printing and typesetting industry.",
+        "image": "https://picsum.photos/id/5/500/500",
+        "timestamp": 1707719080000
+    },
+    {
+        "id": 3,
+        "fromUser": 3,
+        "toUser": 5,
+        "message": "Lorem Ipsum 3 (From Kevin) is simply dummy text of the printing and typesetting industry.",
+        "timestamp": 1707719080000
+    },
+    {
+        "id": 4,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Lorem Ipsum 4 (From Jonathan) is simply dummy text of the printing and typesetting industry.",
+        "timestamp": 1707719260000
+    },
+    {
+        "id": 5,
+        "fromUser": 5,
+        "toUser": 3,
+        "message": "Lorem Ipsum 5 (To Kevin) is simply dummy text of the printing and typesetting industry.",
+        "image": "https://picsum.photos/id/8/500/500",
+        "timestamp": 1707719260000
+    },
+    {
+        "id": 6,
+        "fromUser": 5,
+        "toUser": 2,
+        "message": "Lorem Ipsum 6 (To Elizabeth) is simply dummy text of the printing and typesetting industry.",
+        "timestamp": 1707719080000
+    },
+    {
+        "id": 7,
+        "fromUser": 1,
+        "toUser": 5,
+        "message": "Lorem Ipsum 7 (To Jonathan) is simply dummy text of the printing and typesetting industry.",
+        "image": "https://picsum.photos/id/9/500/500",
+        "timestamp": 1707719280000
+    },
+    {
+        "id": 8,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Hello",
+        "image": null,
+        "timestamp": 1736492758785
+    },
+    {
+        "id": 9,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Hey",
+        "image": null,
+        "timestamp": 1736492785349
+    },
+    {
+        "id": 10,
+        "fromUser": 5,
+        "toUser": 4,
+        "message": "Hello",
+        "image": null,
+        "timestamp": 1736493397814
+    },
+    {
+        "id": 11,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Hi",
+        "image": null,
+        "timestamp": 1736494074563
+    },
+    {
+        "id": 12,
+        "fromUser": 5,
+        "toUser": 4,
+        "message": "Hi",
+        "image": null,
+        "timestamp": 1736494412988
+    },
+    {
+        "id": 13,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "hi",
+        "image": null,
+        "timestamp": 1736667596553
+    },
+    {
+        "id": 14,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "helo",
+        "image": null,
+        "timestamp": 1736667613856
+    },
+    {
+        "id": 15,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "de",
+        "image": null,
+        "timestamp": 1736668106341
+    },
+    {
+        "id": 16,
+        "fromUser": "5",
+        "toUser": 5,
+        "message": "gafg",
+        "image": null,
+        "timestamp": 1736668112088
+    },
+    {
+        "id": 17,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "hahaha",
+        "image": null,
+        "timestamp": 1736668117953
+    },
+    {
+        "id": 18,
+        "fromUser": "5",
+        "toUser": 3,
+        "message": "dada",
+        "image": null,
+        "timestamp": 1736668167266
+    },
+    {
+        "id": 19,
+        "fromUser": "5",
+        "toUser": 3,
+        "message": "asdwa",
+        "image": null,
+        "timestamp": 1736668169141
+    },
+    {
+        "id": 20,
+        "fromUser": "3",
+        "toUser": 5,
+        "message": "dwa",
+        "image": null,
+        "timestamp": 1736668179046
+    },
+    {
+        "id": 21,
+        "fromUser": "3",
+        "toUser": 5,
+        "message": "xxxx",
+        "image": null,
+        "timestamp": 1736668182482
+    },
+    {
+        "id": 22,
+        "fromUser": "3",
+        "toUser": 1,
+        "message": "daw",
+        "image": null,
+        "timestamp": 1736668189396
+    },
+    {
+        "id": 23,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736668530367
+    },
+    {
+        "id": 24,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "haha",
+        "image": null,
+        "timestamp": 1736668533721
+    },
+    {
+        "id": 25,
+        "fromUser": "5",
+        "toUser": 5,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736668552107
+    },
+    {
+        "id": 26,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "lalala",
+        "image": null,
+        "timestamp": 1736668559066
+    },
+    {
+        "id": 27,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736669486077
+    },
+    {
+        "id": 28,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "d",
+        "image": null,
+        "timestamp": 1736669795911
+    },
+    {
+        "id": 29,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "nah hahahadadw",
+        "image": null,
+        "timestamp": 1736670349835
+    },
+    {
+        "id": 30,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "dadad",
+        "image": null,
+        "timestamp": 1736671065676
+    },
+    {
+        "id": 31,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "dwadwa",
+        "image": null,
+        "timestamp": 1736671072748
+    },
+    {
+        "id": 32,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736672885899
+    },
+    {
+        "id": 33,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736672890880
+    },
+    {
+        "id": 34,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736672935325
+    },
+    {
+        "id": 35,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736673093459
+    },
+    {
+        "id": 36,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736673184006
+    },
+    {
+        "id": 37,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "ttt",
+        "image": null,
+        "timestamp": 1736673187149
+    },
+    {
+        "id": 38,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736674864447
+    },
+    {
+        "id": 39,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "dwae",
+        "image": null,
+        "timestamp": 1736674866649
+    },
+    {
+        "id": 40,
+        "fromUser": "5",
+        "toUser": 5,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736674887549
+    },
+    {
+        "id": 41,
+        "fromUser": "1",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736675835959
+    },
+    {
+        "id": 42,
+        "fromUser": "1",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736675992012
+    },
+    {
+        "id": 43,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736676548055
+    },
+    {
+        "id": 44,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736676980693
+    },
+    {
+        "id": 45,
+        "fromUser": "5",
+        "toUser": 2,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736677565330
+    },
+    {
+        "id": 46,
+        "fromUser": "5",
+        "toUser": 3,
+        "message": "w",
+        "image": null,
+        "timestamp": 1736677568467
+    },
+    {
+        "id": 47,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736677830273
+    },
+    {
+        "id": 48,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "ada",
+        "image": null,
+        "timestamp": 1736677937822
+    },
+    {
+        "id": 49,
+        "fromUser": "5",
+        "toUser": 3,
+        "message": "wea",
+        "image": null,
+        "timestamp": 1736677941144
+    },
+    {
+        "id": 50,
+        "fromUser": "5",
+        "toUser": 5,
+        "message": "d",
+        "image": null,
+        "timestamp": 1736683274642
+    },
+    {
+        "id": 51,
+        "fromUser": "5",
+        "toUser": 5,
+        "message": "dddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "image": null,
+        "timestamp": 1736683289725
+    },
+    {
+        "id": 52,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "adda",
+        "image": null,
+        "timestamp": 1736683294476
+    },
+    {
+        "id": 53,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "qweqweqweqweqweqwe",
+        "image": null,
+        "timestamp": 1736683298733
+    },
+    {
+        "id": 54,
+        "fromUser": "5",
+        "toUser": 5,
+        "message": "da",
+        "image": null,
+        "timestamp": 1736683554303
+    },
+    {
+        "id": 55,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "hahaha",
+        "image": null,
+        "timestamp": 1736683627272
+    },
+    {
+        "id": 56,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "hah",
+        "image": null,
+        "timestamp": 1736683633051
+    },
+    {
+        "id": 57,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "waeadasdw",
+        "image": null,
+        "timestamp": 1736683758492
+    },
+    {
+        "id": 58,
+        "fromUser": "5",
+        "toUser": 1,
+        "message": "haha",
+        "image": null,
+        "timestamp": 1736683761591
+    },
+    {
+        "id": 59,
+        "fromUser": "5",
+        "toUser": 4,
+        "message": "daa",
+        "image": null,
+        "timestamp": 1736683778969
+    }
+]
