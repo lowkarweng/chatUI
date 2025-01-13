@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "username": "Jonathan",
+    "position": "Frontend Developer",
+    "address": "Malaysia",
+    "phone": "+60161111222",
+    "email": "jonathan@test.com",
+    "profileImage": "https://picsum.photos/id/91/500/500"
+}

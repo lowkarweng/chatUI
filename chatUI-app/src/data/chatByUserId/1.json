@@ -1,0 +1,49 @@
+[
+    {
+        "id": 2,
+        "fromUser": 1,
+        "toUser": 5,
+        "message": "Lorem Ipsum 2 (To Jonathan) is simply dummy text of the printing and typesetting industry.",
+        "image": "https://picsum.photos/id/5/500/500",
+        "timestamp": 1707719080000
+    },
+    {
+        "id": 4,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Lorem Ipsum 4 (From Jonathan) is simply dummy text of the printing and typesetting industry.",
+        "timestamp": 1707719260000
+    },
+    {
+        "id": 7,
+        "fromUser": 1,
+        "toUser": 5,
+        "message": "Lorem Ipsum 7 (To Jonathan) is simply dummy text of the printing and typesetting industry.",
+        "image": "https://picsum.photos/id/9/500/500",
+        "timestamp": 1707719280000
+    },
+    {
+        "id": 8,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Hello",
+        "image": null,
+        "timestamp": 1736492758785
+    },
+    {
+        "id": 9,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Hey",
+        "image": null,
+        "timestamp": 1736492785349
+    },
+    {
+        "id": 11,
+        "fromUser": 5,
+        "toUser": 1,
+        "message": "Hi",
+        "image": null,
+        "timestamp": 1736494074563
+    }
+]

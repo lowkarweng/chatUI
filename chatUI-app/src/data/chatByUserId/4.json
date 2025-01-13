@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "fromUser": 4,
+        "toUser": 5,
+        "message": "Lorem Ipsum 1 (From Michael) is simply dummy text of the printing and typesetting industry.",
+        "image": null,
+        "timestamp": 1707719080
+    },
+    {
+        "id": 10,
+        "fromUser": 5,
+        "toUser": 4,
+        "message": "Hello",
+        "image": null,
+        "timestamp": 1736493397814
+    },
+    {
+        "id": 12,
+        "fromUser": 5,
+        "toUser": 4,
+        "message": "Hi",
+        "image": null,
+        "timestamp": 1736494412988
+    }
+]

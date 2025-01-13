@@ -1,6 +1,6 @@
 //API => List of Groups (GET)
 export async function getGroupList() {
-    const url = "http://18.143.79.95/api/chatSystem/groups/list";
+    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/groups/list.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -14,7 +14,7 @@ export async function getGroupList() {
 
 //API => Get User Details by user id (GET)
 export async function getUser(id) {
-    const url = "http://18.143.79.95/api/chatSystem/user/" + id;
+    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/user/" + id;
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -28,7 +28,7 @@ export async function getUser(id) {
 
 //API => Get Chat by user id (GET)
 export async function getChatByUser(id) {
-    const url = "http://18.143.79.95/api/chatSystem/chatByUserId/" + id;
+    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/chatByUserId/" + id;
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -42,7 +42,7 @@ export async function getChatByUser(id) {
 
 //API => Add New Chat (POST)
 export async function sendMessage(from, to, message) {
-    const url = "http://18.143.79.95/api/chatSystem/chat/add";
+    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/chat/add";
     try {
         const response = await fetch(url, {
             method: "POST",

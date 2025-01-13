@@ -1,0 +1,9 @@
+[
+    {
+        "id": 6,
+        "fromUser": 5,
+        "toUser": 2,
+        "message": "Lorem Ipsum 6 (To Elizabeth) is simply dummy text of the printing and typesetting industry.",
+        "timestamp": 1707719080000
+    }
+]

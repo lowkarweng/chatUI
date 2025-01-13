@@ -1,0 +1,9 @@
+{
+    "id": 5,
+    "username": "Harry Potter",
+    "position": "Interviewee",
+    "address": "United Kingdom",
+    "phone": "+44 1617811222",
+    "email": "potter@test.com",
+    "profileImage": "https://picsum.photos/id/9/500/500"
+}
