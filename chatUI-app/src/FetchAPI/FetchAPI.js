@@ -14,7 +14,7 @@ export async function getGroupList() {
 
 //API => Get User Details by user id (GET)
 export async function getUser(id) {
-    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/user/" + id;
+    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/user/" + id + ".json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -28,7 +28,7 @@ export async function getUser(id) {
 
 //API => Get Chat by user id (GET)
 export async function getChatByUser(id) {
-    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/chatByUserId/" + id;
+    const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/chatByUserId/" + id + ".json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
