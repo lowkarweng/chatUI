@@ -62,7 +62,7 @@ const chatList = await getChatList();
 
 //API => List of Users (GET)
 async function getChatUserList() {
-  const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/users/list";
+  const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/users/list.json";
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -76,7 +76,7 @@ async function getChatUserList() {
 
 //API => List of Chats (GET)
 async function getChatList() {
-  const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/chat/list";
+  const url = "https://raw.githubusercontent.com/lowkarweng/chatUI/main/chatUI-app/src/data/chat/list.json";
   try {
     const response = await fetch(url);
     if (!response.ok) {
